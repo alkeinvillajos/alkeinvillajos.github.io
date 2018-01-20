@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    
+}
+
+/* 
+==================
+    ID Header 
+==================
+*/
+.id-container {
+    max-width: 800px;
+    overflow: hidden;
+
+}
+
+.pic-holder {
+     text-align: center;
+}
+.main-image {
+    max-width: 100%; height: auto;
+}
+
+@media (max-width: 900px) {
+    .main-image {
+        max-width: 50%;
+    }
+}
+
+.details-holder {
+    background-color:rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    width: 100%;
+    height: 302px;
+    padding-left: 30px;
+}
+
+@media (max-width: 380px) {
+    .details-holder {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .id-container {
+        display: flex;
+    }
+}
+
+.greeting-font {
+    font-size: 30px;
+}
+
+strong.myName {
+    color: #3FC380;
+}
+
+ul {
+    float: left;
+}
+
+ul.second-list {
+    margin-left: 50px;
+}
+
+.my-divider {
+    margin: 20px 0;
+    border-top: 1px dashed #8c8b8b;
+}
+/* 
+==============================================
+    Sliding Image Design for Multimedia Skilss
+==============================================
+*/
+
+.SIimage1 {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    margin-left: -1000px;
+    transform: rotate(100deg);
+    margin-top: -100px;
+    opacity: 0;
+    -webkit-transition: all 1s ease-in-out
+}
+
+.design-slider img.SIimage1.slide-now1 {
+    opacity: 1;
+    margin-left: -800px;
+    transform: rotate(30deg);
+}
+
+.SIimage2 {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    margin-left: 800px;
+    transform: rotate(100deg);
+    opacity: 0;
+    margin-top: 100px;
+    -webkit-transition: all 1s ease-in-out
+}
+
+.design-slider img.SIimage2.slide-now2 {
+    opacity: 1;
+    margin-left: 450px;
+    transform: rotate(0deg);
+}
+
+/* 
+=========================================
+    Sliding Image Design for Photography
+=========================================
+*/
+
+.polaroid {
+    background: rgb(248, 248, 248);
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.image1 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: -900px;
+    margin-top: -250px;
+    transform: rotate(5deg);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.polaroid-container img.image1.slide-in,
+.polaroid-container img.image2.slide-in,
+.polaroid-container img.image3.slide-in,
+.polaroid-container img.image4.slide-in {
+    margin-left: -700px;
+    opacity: 1;
+}
+
+.image2 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: -900px;
+    margin-top: -120px;
+    opacity: 0;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+}
+
+.image3 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: -900px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: rotate(5deg);
+    transition: all 1s ease-in-out;
+}
+.image4 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: -900px;
+    margin-top: 140px;
+    opacity: 0;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+}
+
+.polaroid-container img.image5.slide-in,
+.polaroid-container img.image6.slide-in,
+.polaroid-container img.image7.slide-in,
+.polaroid-container img.image8.slide-in {
+    margin-left: 500px;
+    opacity: 1;
+}
+
+.image5 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: 700px;
+    margin-top: 280px;
+    transform: rotate(-5deg);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.image6 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: 700px;
+    margin-top: -120px;
+    transform: rotate(5deg);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.image7 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: 700px;
+    margin-top: 10px;
+    transform: rotate(-5deg);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.image8 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: 700px;
+    margin-top: 140px;
+    transform: rotate(5deg);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+/* Photo Gallery */
+
+.skill-pics figure {
+    position: relative;
+    opacity: 0;
+    transform: translateX(20px);
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.skill-pics figure.is-showing {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.skill-pics-photography figure {
+    position: relative;
+    opacity: 0;
+    transform: translateX(20px);
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.skill-pics-photography figure.show {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+/* Parallax */
+
+.header-bg {
+
+    height: 450px;
+    background: url('images/header-bg.jpg') no-repeat top center;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+=====================
+Work Experiences
+=====================
+ */
+
+ .content-container {
+     max-width: auto;
+ }
+
+
+ @media (min-width: 900px) {
+     .content-container {
+         display: flex;
+         justify-content: space-between;
+     }
+ }
+
+ .column {
+     background: rgb(250, 249, 249);
+     box-shadow: 5px 10px 18px #888888;
+     opacity: 0;
+     -webkit-transform: scale(1.1);
+     transition: all 0.3s ease-in-out;
+    
+ }
+ .place-down {
+    -webkit-transform: scale(1);
+     opacity: 1;
+ }
+ .column:hover {
+     -webkit-transform: scale(1.1);
+ }
+
+ .column > p {
+
+ }
+ .work-clipart {
+     max-width: 70%;
+ }
+
+ .footer-container {
+    text-align: center;
+ 
+ }
+ .footer-content {
+    color: white;
+    font-size: 25px
+    
+ }
+
+ .footer-panel {
+     background: #3FC380;
+ 
+ }
