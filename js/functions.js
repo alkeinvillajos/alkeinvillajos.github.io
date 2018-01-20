@@ -49,8 +49,25 @@ $(window).scroll(function(){
             }, 150 * (div+1));
         });
     }
-
-
-
 });
 
+$(document).ready(function() {
+    $("img.gallery").click(function() {
+      var src = $(this).attr("src");
+
+
+      if (!$("#light-box").length > 0) {
+        $("body").append("<div id='light-box'><span class='close'><strong>X</strong></span><img src='' class='gallery'></div>");
+        $("#light-box").show();
+       $("#light-box img").attr("src", src);
+      } else {
+        $("#light-box").show();
+        $("#light-box img").attr("src", src);
+      }
+
+
+    });
+    $("body").on("click", "#light-box span", function() {
+      $("#light-box").hide();
+    });
+  });
