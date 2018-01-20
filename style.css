@@ -315,7 +315,10 @@ Work Experiences
  .footer-content {
     color: white;
     font-size: 25px
-    
+ }
+ 
+ .footer-content a {
+     color: white;
  }
 
  .footer-panel {
