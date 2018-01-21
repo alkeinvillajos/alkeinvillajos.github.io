@@ -85,7 +85,9 @@ ul.second-list {
     transform: rotate(100deg);
     margin-top: -100px;
     opacity: 0;
-    -webkit-transition: all 1s ease-in-out
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .design-slider img.SIimage1.slide-now1 {
@@ -102,7 +104,9 @@ ul.second-list {
     transform: rotate(100deg);
     opacity: 0;
     margin-top: 100px;
-    -webkit-transition: all 1s ease-in-out
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .design-slider img.SIimage2.slide-now2 {
@@ -233,6 +237,8 @@ ul.second-list {
     opacity: 0;
     transform: translateX(20px);
     -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .skill-pics figure.is-showing {
@@ -245,6 +251,8 @@ ul.second-list {
     opacity: 0;
     transform: translateX(20px);
     -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .skill-pics-photography figure.show {
@@ -291,20 +299,24 @@ Work Experiences
      padding: 10px;
      opacity: 0;
      -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     transform: scale(1.1);
+     -webkit-transition: all 0.3s ease-in-out;
+     -webkit-moz: all 0.3s ease-in-out;
      transition: all 0.3s ease-in-out;
     
  }
  .place-down {
     -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
      opacity: 1;
  }
  .column:hover {
      -webkit-transform: scale(1.1);
- }
-
- .column > p {
 
  }
+
  .work-clipart {
      max-width: 70%;
  }
