@@ -62,7 +62,7 @@ $(document).ready(function(){
     
     // MOBILE NAV
      $('#main-nav .logo').click(function() {
-        $('#main-nav ul').toggleClass('nav-open');
+        $('#main-nav ul').slideToggle(500);
     });
     
     
