@@ -230,7 +230,7 @@ nav.sticky-bg {
 
 #skills {
     height: 100vh;
-    padding: 60px 30px;
+    padding: 150px 30px;
     background: url(../images/skilss-bg.jpg) no-repeat;
     background-size: cover;
 }
@@ -267,9 +267,11 @@ nav.sticky-bg {
 
 #skills .skills-container .box {
     width: 30%;
+    height: 280px;
     display: inline-grid;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     padding: 20px;
+    
 }
 
 
@@ -336,7 +338,7 @@ footer .footer-content {
 
 
 
-@media (max-width: 903px) {
+@media (max-width: 1020px) {
     #about article.about-me,
     #about article.my-profile {
         float: none;
