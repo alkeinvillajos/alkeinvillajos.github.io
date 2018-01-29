@@ -157,6 +157,7 @@ nav.sticky-bg {
     background-size: cover;
 }
 
+
 #about article.about-me {
     background: rgba(255,255,255,0.9);
     padding: 20px;
@@ -233,6 +234,12 @@ nav.sticky-bg {
     padding: 150px 30px;
     background: url(../images/skilss-bg.jpg) no-repeat;
     background-size: cover;
+}
+
+#skills #tss {
+    opacity: 0;
+    -webkit-transition: opacity 1.0s linear 0s;
+    transition: opacity 1.0s linear 0s;
 }
 
 #skills .title {

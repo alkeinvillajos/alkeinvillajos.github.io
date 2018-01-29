@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -9,6 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        var tss_i = 1;
+    var tss_array = ['Photography', 'Music', 'Web Design', 'Graphic Design'];
+    var tss_elem;
+    
+    function tssNext() {
+        tss_i++;
+        tss_elem.style.opacity = 0;
+        
+        if(tss_i >(tss_array.length - 1)) {
+            tss_i = 0;
+        }
+        setTimeout('tssSlide()', 1000);
+    }
+        
+    function tssSlide() {
+        tss_elem.innerHTML = tss_array[tss_i];
+        tss_elem.style.opacity = 1;
+        setTimeout('tssNext()', 2000);
+        
+    } 
+    </script>
+    
 </head>
 
 <body>
@@ -86,7 +109,8 @@
 </main>
     <section id="skills">
         <div class="title">
-            <h2>My Skills include...</h2>
+            <h2>My Skills include...<span id="tss"></span><script>tss_elem = document.getElementById('tss'); tssSlide(); </script>
+            </h2>
         </div>
       <div class="skills-container text-center">
             <div class="skill-box">
@@ -94,14 +118,14 @@
                     <h3>Comfortable</h3>
                     <p>Understood and excuted with full confidence</p>
                     <ul>
-                        <li><img src="images/HTML5.png" alt="html5"></li>
-                        <li><img src="images/css3.png" alt="css3"></li>
-                        <li><img src="images/js.png" alt="javascript"></li>
+                        <li><img src="images/HTML5.png" alt="html5" title="HTML5"></li>
+                        <li><img src="images/css3.png" alt="css3" title="CSS3"></li>
+                        <li><img src="images/js.png" alt="javascript" title="JavaScript"></li>
                         
                     </ul>
                     <ul>
-                        <li><img src="images/jquery.png" alt="jquery"></li>
-                        <li><img src="images/git.png" alt="git"></li>
+                        <li><img src="images/jquery.png" alt="jquery" title="JQuery"></li>
+                        <li><img src="images/git.png" alt="git" title="Git"></li>
                     </ul>
                 </div>
                 
@@ -109,14 +133,14 @@
                     <h3>Not so Comfortable</h3>
                     <p>Executed with room for improvement</p>
                     <ul>
-                        <li><img src="images/wp.png" alt="jquery"></li>
-                        <li><img src="images/php.png" alt="PHP"></li>
-                        <li><img src="images/PHPMySQL.png" alt="PHPmySql"></li>
+                        <li><img src="images/wp.png" alt="jquery" title="WordPress"></li>
+                        <li><img src="images/php.png" alt="PHP" title="PHP"></li>
+                        <li><img src="images/PHPMySQL.png" alt="PHPmySql" title="PHP MySQL"></li>
                     </ul>
                     
                     <ul>
-                        <li><img src="images/Csharp.png" alt="C#"></li>
-                        <li><img src="images/android.png" alt="android"></li>
+                        <li><img src="images/Csharp.png" alt="C#" title="C#"></li>
+                        <li><img src="images/android.png" alt="android" title="Android"></li>
                     </ul>
                 </div>
                 
@@ -125,15 +149,15 @@
                     <p>Amazing in theory, but still on learning path</p>
                     
                     <ul>
-                        <li><img src="images/AngularJS-Shield.svg" alt="angular"></li>
-                        <li><img src="images/reactjs.png" alt="react"></li>
-                        <li><img src="images/laravel.png" alt="laravel"></li>
-                        <li><img src="images/rails.png" alt="rails"></li>
+                        <li><img src="images/AngularJS-Shield.svg" alt="angular" title="Angular JS"></li>
+                        <li><img src="images/reactjs.png" alt="react" title="React JS"></li>
+                        <li><img src="images/laravel.png" alt="laravel" title="Laravel"></li>
+                        <li><img src="images/rails.png" alt="rails" title="Ruby on Rails"></li>
                     </ul>
                     
                     <ul>
-                        <li><img src="images/AJAX.png" alt="ajax"></li>
-                        <li><img src="images/JSON.png" alt="json"></li>
+                        <li><img src="images/AJAX.png" alt="ajax" title="AJAX"></li>
+                        <li><img src="images/JSON.png" alt="json" title="JSON"></li>
                  
                     </ul>
                     

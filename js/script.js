@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+    
     $(window).scroll(function() {
        if($(window).scrollTop()) {
            $('nav').addClass('sticky-bg');
@@ -59,9 +61,22 @@ $(document).ready(function(){
     
     
     // MOBILE NAV
-
-    $('#main-nav .logo').click(function() {
+     $('#main-nav .logo').click(function() {
         $('#main-nav ul').toggleClass('nav-open');
     });
     
+    
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
