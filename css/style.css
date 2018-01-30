@@ -290,6 +290,62 @@ nav.sticky-bg {
     
 }
 
+#skills:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+/*
+================================
+           PROJECTS
+================================
+*/
+
+#projects {
+    height: 100vh;
+    padding: 50px 30px;
+}
+
+#projects img {
+    max-height: 200px;
+}
+
+#projects .project-container {
+  
+}
+
+.progress-selected {
+    z-index: 4;
+    width: 46px;
+    height: 46px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    font-size: 30px;
+}
+
+.progress-container {
+    width: 100%;
+    font-size: 30px;
+    
+}
+
+
+
+.progress-container a {
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.main-content {
+    width: 100%;
+    padding: 20px;
+}
+
+.content-switcher {
+    display: none;
+}
 
 /*
 ================================
