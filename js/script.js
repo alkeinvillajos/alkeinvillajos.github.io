@@ -66,9 +66,32 @@ $(document).ready(function(){
     });
     
     
+   // page slide
+    $('#right-arrow').click(function() {
+        var currentSlide = $('.slide.current-slide');
+        var nextSlide = currentSlide.next();
+        
+        currentSlide.fadeOut(300).removeClass('current-slide');
+        nextSlide.fadeIn(300).addClass('current-slide');
+        
+        if(nextSlide.length == 0) {
+            $('#projects .slide').first().fadeIn(300).addClass('current-slide')
+        }
+    });
     
-    
-    
+    $('#left-arrow').click(function() {
+
+        var currentSlide = $('.slide.current-slide');
+        var prevSlide = currentSlide.prev();
+        
+        currentSlide.fadeOut(300).removeClass('current-slide');
+        prevSlide.fadeIn(300).addClass('current-slide');
+        
+        if(prevSlide.length == 0) {
+            $('#projects .slide').last().fadeIn(300).addClass('current-slide');
+        }
+    });
+   
 });
 
 

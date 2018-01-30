@@ -24,6 +24,11 @@ hr {
     border-color: #d8d8d8
 }
 
+.disableScroll {
+      overflow-y: hidden;
+      overflow-x: hidden;
+}
+
 /*
 ================================
     E N D  O F  G L O B A L
@@ -43,6 +48,7 @@ hr {
     padding: 10px 0;
     width: 100%;
     transition: all 1s ease-in-out;
+    z-index: 5;
 }
 
 #main-nav .logo img {
@@ -239,7 +245,7 @@ nav.sticky-bg {
 
 #skills {
     height: 100vh;
-    padding: 150px 30px;
+    padding: 100px 30px;
     background: url(../images/skilss-bg.jpg) no-repeat;
     background-size: cover;
 }
@@ -307,35 +313,77 @@ nav.sticky-bg {
 
 #projects {
     height: 100vh;
-    padding: 50px 30px;
+    padding: 50px 0;
     background: #C5EFF7;
+    text-align: center;
+}
+
+#projects img {
+    max-width: 30%;
 }
 
 #projects .project-container {
     width: 80%;
-    margin: 10% 10%;
     text-align: center;
+    
 }
-#projects hr {
-    width: 80%;
-    margin: 20px 10%;
+
+#projects #left-arrow {
+    cursor: pointer;
+    font-size: 40px;
+    color: #FFF;
+    margin-top: 30px;
+    position: absolute;
+    left: 30px;
+    transition: all 0.3s ease-in-out;
 }
-#project2 {
+
+#projects #left-arrow:hover, #projects #right-arrow:hover {
+    transition: all 0.3s ease-in-out;
+    color: #2caaff;
+}
+
+#projects #right-arrow {
+   cursor: pointer;
+    font-size: 40px;
+    color: #FFF;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 30px;
+    margin-top: 30px;
+}
+
+
+
+.slide {
+    position: absolute;
+    display: none;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.slide.current-slide {
+    display: block;
+}
+
+
+/*
+================================
+           CONSTRUCTION
+================================
+*/
+
+#construction {
+    background: #F9BF3B;
     height: 100vh;
-    padding: 50px 30px;
-    background: #A2DED0;
-}
-
-#project2 hr {
-    width: 80%;
-    margin: 20px 10%;
-}
-
-#project2 .project-container {
-    width: 80%;
-    margin: 10% 10%;
+    padding: 100px;
     text-align: center;
 }
+
+#construction h1 {
+    color: #fff;
+}
+
     
 /*
 ================================
