@@ -20,6 +20,10 @@ body, html {
     height: 100%;
 }
 
+hr {
+    border-color: #d8d8d8
+}
+
 /*
 ================================
     E N D  O F  G L O B A L
@@ -304,49 +308,35 @@ nav.sticky-bg {
 #projects {
     height: 100vh;
     padding: 50px 30px;
-}
-
-#projects img {
-    max-height: 200px;
+    background: #C5EFF7;
 }
 
 #projects .project-container {
-  
+    width: 80%;
+    margin: 10% 10%;
+    text-align: center;
+}
+#projects hr {
+    width: 80%;
+    margin: 20px 10%;
+}
+#project2 {
+    height: 100vh;
+    padding: 50px 30px;
+    background: #A2DED0;
 }
 
-.progress-selected {
-    z-index: 4;
-    width: 46px;
-    height: 46px;
-    margin-left: 20px;
-    border-radius: 50%;
-    background: black;
-    color: white;
-    font-size: 30px;
+#project2 hr {
+    width: 80%;
+    margin: 20px 10%;
 }
 
-.progress-container {
-    width: 100%;
-    font-size: 30px;
+#project2 .project-container {
+    width: 80%;
+    margin: 10% 10%;
+    text-align: center;
+}
     
-}
-
-
-
-.progress-container a {
-    cursor: pointer;
-    padding: 0 20px;
-}
-
-.main-content {
-    width: 100%;
-    padding: 20px;
-}
-
-.content-switcher {
-    display: none;
-}
-
 /*
 ================================
            FOOTER
