@@ -92,7 +92,25 @@ $(document).ready(function(){
         }
     });
     
+ $("img.product").click(function() {
+      var src = $(this).attr("src");
 
+
+      if (!$("#light-box").length > 0) {
+        $("body").append("<div id='light-box'><img src='' class='product'></div>");
+        $("#light-box").show();
+       $("#light-box img").attr("src", src);
+      } else {
+        $("#light-box").show();
+        $("#light-box img").attr("src", src);
+      }
+
+
+    });
+    $("body").on("click", "#light-box", function() {
+      $("#light-box").hide();
+        
+    });
    
 });
 
