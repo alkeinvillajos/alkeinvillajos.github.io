@@ -51,6 +51,39 @@ hr {
     z-index: 5;
 }
 
+
+
+
+
+
+
+.cool-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    margin-top: 8px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
 #main-nav .logo img {
     width: 100%;
     height: 50px;
@@ -96,6 +129,7 @@ nav.sticky-bg {
     color: white;
     text-transform: uppercase;
 }
+
 #main-nav ul li a:hover,
 #main-nav ul li a:focus{
     transition: all 0.3s ease-in-out;
@@ -293,10 +327,11 @@ nav.sticky-bg {
 
 #skills .skills-container .box {
     width: 30%;
-    height: 280px;
+    height: 400px;
     display: inline-grid;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     padding: 20px;
+    padding-top: 0;
     
 }
 
@@ -382,6 +417,7 @@ nav.sticky-bg {
 
 #construction h1 {
     color: #fff;
+
 }
 
     

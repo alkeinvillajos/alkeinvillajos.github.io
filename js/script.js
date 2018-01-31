@@ -91,6 +91,8 @@ $(document).ready(function(){
             $('#projects .slide').last().fadeIn(300).addClass('current-slide');
         }
     });
+    
+
    
 });
 
